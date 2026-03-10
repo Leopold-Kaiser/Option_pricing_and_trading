@@ -27,7 +27,7 @@ The CSV files are included to ensure full reproducibility of the analysis.
 
 # Notebook Descriptions
 
----
+
 Heston–Nandi GARCH Option Pricing
 ---
 
