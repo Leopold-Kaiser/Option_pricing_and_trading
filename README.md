@@ -1,4 +1,4 @@
-Overview
+## Overview
 
 This repository contains two independent analyses of Bitcoin option markets. The project explores both model-based option pricing and arbitrage-based option strategies using real market data.
 
@@ -6,7 +6,7 @@ The first part applies the Heston–Nandi GARCH(1,1) option pricing framework to
 
 Together, the analyses illustrate how quantitative methods can be used to study derivatives pricing, volatility dynamics, and potential arbitrage opportunities in cryptocurrency option markets.
 
-Repository Structure
+## Repository Structure
 
 Heston-Nandi GARCH(1,1)_BTC_option_pricing.ipynb
 
@@ -25,8 +25,9 @@ new_all_box_spreads.csv (for Box_Spread_Screener.ipynb)
 
 The CSV files are included to ensure full reproducibility of the analysis.
 
-Notebook Descriptions
-Heston–Nandi GARCH Option Pricing
+## Notebook Descriptions
+
+# Heston–Nandi GARCH Option Pricing
 
 This notebook applies the Heston–Nandi GARCH(1,1) model to price Bitcoin options.
 
