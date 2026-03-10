@@ -26,7 +26,9 @@ Box_Spread_Screener.ipynb
 ---
 new_all_box_spreads.csv
 
-The CSV files are included to ensure full reproducibility of the analysis.\\
+
+
+The CSV files are included to ensure full reproducibility of the analysis.
 
 
 
