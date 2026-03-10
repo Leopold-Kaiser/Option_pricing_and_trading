@@ -12,11 +12,13 @@ Together, the analyses illustrate how quantitative methods can be used to study 
 Heston-Nandi GARCH(1,1)_BTC_option_pricing.ipynb
 ---
 BTC.csv
+
 Bitcoin-close_ts
 
 Box_Spread_construction.ipynb
 ---
 VIX_calls.csv
+
 VIX_puts.csv
 
 Box_Spread_Screener.ipynb
@@ -37,52 +39,49 @@ The workflow includes:
 
 > estimating conditional volatility using Bitcoin return data
 
-calibrating the Heston–Nandi GARCH model
+> calibrating the Heston–Nandi GARCH model
 
-deriving theoretical option prices
+> deriving theoretical option prices
 
-comparing model-implied prices with observed market prices
+> comparing model-implied prices with observed market prices
 
 The model captures time-varying volatility dynamics, which are particularly important in cryptocurrency markets.
 
 Box Spread Construction
+---
 
 This notebook constructs box spread option strategies from available option contracts.
 
 A box spread consists of:
 
-long call with strike K1
+> long call with strike K1
+> short call with strike K2​
+> long put with strike K2
+> short put with strike K1
 
-short call with strike K2​
-
-long put with strike K2
-
-short put with strike K1
-
-This combination replicates a risk-free payoff equal to K2−K1 at maturity.
+> This combination replicates a risk-free payoff equal to K2 − K1 at maturity.
 
 The notebook identifies valid option combinations and computes the resulting spread payoffs.
 
 Box Spread Screener
+---
 
 This notebook scans constructed box spreads to detect potential arbitrage opportunities.
 
 The screener evaluates:
 
-box spread pricing
-
-implied returns
-
-deviations from theoretical no-arbitrage values
+> box spread pricing
+> implied returns
+> deviations from theoretical no-arbitrage values
 
 It highlights spreads that may indicate mispricing in option markets.
 
-Requirements
+## Requirements
 
 The notebooks rely on standard Python libraries:
 
-numpy
-pandas
-scipy
-matplotlib
-statsmodels
+> numpy
+> pandas
+> scipy
+> matplotlib
+> statsmodels
