@@ -8,20 +8,20 @@ Together, the analyses illustrate how quantitative methods can be used to study 
 
 # Repository Structure
 
+
 Heston-Nandi GARCH(1,1)_BTC_option_pricing.ipynb
+---
+BTC.csv
+Bitcoin-close_ts
 
 Box_Spread_construction.ipynb
+---
+VIX_calls.csv
+VIX_puts.csv
 
 Box_Spread_Screener.ipynb
-
-BTC.csv (for Heston-Nandi GARCH(1,1)_BTC_option_pricing.ipynb)
-Bitcoin-close_ts (for Heston-Nandi GARCH(1,1)_BTC_option_pricing.ipynb)
-
-VIX_calls.csv (for Box_Spread_construction.ipynb)
-VIX_puts.csv (for Box_Spread_construction.ipynb)
-
-new_all_box_spreads.csv (for Box_Spread_Screener.ipynb)
-
+---
+new_all_box_spreads.csv
 
 The CSV files are included to ensure full reproducibility of the analysis.
 
@@ -35,7 +35,7 @@ This notebook applies the Heston–Nandi GARCH(1,1) model to price Bitcoin optio
 
 The workflow includes:
 
-estimating conditional volatility using Bitcoin return data
+> estimating conditional volatility using Bitcoin return data
 
 calibrating the Heston–Nandi GARCH model
 
